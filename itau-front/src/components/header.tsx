@@ -1,32 +1,61 @@
 import Image from 'next/image';
 import Logo from '@/assets/logo.svg';
 import Arrow from '@/assets/arrow-down.svg';
+import IconUser from '@/assets/icon-user.svg';
+
+
+import { ItemMenu } from './itemMenu';
+import { Search } from './search';
+import { Container } from './container';
 
 export function Header() {
     return(
-        <header className='flex items-center w-full h-20 bg-primary-orange'>
-            <div className='w-full max-w-[1246px] px-[15px] mx-auto'>
-                <div>
+        <header className='relative flex items-center w-full h-20 bg-primary-orange'>
+            <div className='absolute top-0 right-0 bg-primary-blue w-[19%] h-full z-0'></div>
+
+            <Container>
+                <div className='flex flex-1 items-center justify-between'>
                     <div className='flex items-center gap-14'>
                         <Image
                             src={Logo}
                             alt="Logo"
                         />
 
-                        <ul>
+                        <ul className='flex items-center gap-12'>
                             <li>
-                                <button className='flex items-center gap-3'>
-                                    <span className='text-white font-bold'>Para Você</span>
-                                    <Image
-                                        src={Arrow}
-                                        alt="Arrow dropdown"
-                                    />
-                                </button>
+                               <ItemMenu
+                                    name='Para Você'
+                               />
+                            </li>
+                            <li>
+                               <ItemMenu
+                                    name='Para Empresas'
+                               />
+                            </li>
+                            <li>
+                               <ItemMenu
+                                    name='Serviços'
+                               />
+                            </li>
+                            <li>
+                               <ItemMenu
+                                    name='Ajuda'
+                               />
                             </li>
                         </ul>
                     </div>
+                    
+                    <Search/>
                 </div>
-            </div>
+
+                <button className='flex items-center gap-4 bg-primary-blue h-20 pl-10 z-10'>
+                    <Image
+                        src={IconUser}
+                        alt='Icon User'
+                    />
+                    <span className='text-white font-bold'>Acessar Conta</span>
+                </button>
+            </Container>
         </header>
     )
 }
