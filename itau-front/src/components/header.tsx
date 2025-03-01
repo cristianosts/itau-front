@@ -1,14 +1,20 @@
+"use client"
 import Image from 'next/image';
 import Logo from '@/assets/logo.svg';
 import Arrow from '@/assets/arrow-down.svg';
 import IconUser from '@/assets/icon-user.svg';
+import 'boxicons/css/boxicons.min.css';
 
 
 import { ItemMenu } from './itemMenu';
 import { Search } from './search';
 import { Container } from './container';
+import { useState } from 'react';
 
 export function Header() {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
     return(
         <header className='relative flex items-center w-full h-20 bg-primary-orange'>
             <div className='absolute top-0 right-0 bg-primary-blue w-[19%] h-full z-0'></div>
@@ -21,7 +27,7 @@ export function Header() {
                             alt="Logo"
                         />
 
-                        <ul className='flex items-center gap-12'>
+                        <ul className='hidden md:flex items-center gap-12'>
                             <li>
                                <ItemMenu
                                     name='Para Você'
@@ -43,6 +49,42 @@ export function Header() {
                                />
                             </li>
                         </ul>
+
+
+                        <button className='md:hidden 'onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                            <i className='bx bx-menu  text-4xl text-white'></i>
+                        </button>
+
+                        <div className={`absolute md:hidden top-[90px] left-0 pb-5 w-full bg-primary-orange flex flex-col items-center gap-6 transform transition-transform ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+                        
+                        style={{ transition: '0.3s ease', opacity: isMenuOpen ? 1 : 0 }}
+                        
+                        >
+                            
+
+                            <li className='hover:bg-orange-400 p-3 rounded-md transition-all list-none w-full flex justify-center'>
+                               <ItemMenu
+                                    name='Para Você'
+                                    />
+                            </li>
+                            <li className='hover:bg-orange-400 p-3 rounded-md transition-all list-none w-full flex justify-center'>
+                               <ItemMenu
+                                    name='Para Empresas'
+                                    />
+                            </li>
+                            <li className='hover:bg-orange-400 p-3 rounded-md transition-all list-none w-full flex justify-center'>
+                               <ItemMenu
+                                    name='Serviços'
+                                    />
+                            </li>
+                            <li className='hover:bg-orange-400 p-3 rounded-md transition-all list-none w-full flex justify-center'>
+                               <ItemMenu
+                                    name='Ajuda'
+                                    />
+                            </li>
+                            
+
+                        </div>
                     </div>
                     
                     <Search/>
