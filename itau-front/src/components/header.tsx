@@ -90,7 +90,7 @@ export function Header() {
                     <Search/>
                 </div>
 
-                <button className='flex rounded-full  ml-60 -mt-12 p-5 h-14  md:rounded-none items-center gap-4 bg-primary-blue md:h-20 md:mt-0 md: lg:pl-10 z-10'>
+                <button className='flex rounded-full ml-60 -mt-12 p-5  h-14  md:rounded-none items-center gap-4 bg-primary-blue md:pr-10 md:h-[83px] md:w-40 md:-mt-[60px] md:mr-[-400px] lg:mr-0  lg:mb-[-65px] z-10'>
                     <Image
                         src={IconUser}
                         alt='Icon User'
