@@ -9,7 +9,7 @@ import { Container } from "./container";
 
 export function SectionHero() {
     return (
-        <section className="w-full h-[704px] bg-img_bg_hero bg-no-repeat bg-center bg-cover">
+        <section className="w-full lg:h-[704px] bg-img_bg_hero bg-no-repeat bg-center bg-cover">
            
             <Container>
               <div className="flex-1 max-w-[500px]">

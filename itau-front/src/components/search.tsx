@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 export function Search() {
     return (
-        <div className='flex items-center gap-4'>
-          <Image
+        <div className='hidden lg:flex md:items-center md:gap-4'>
+          <Image className='hidden xl:block'
              src={IconSearch}
              alt='Search'
           />
 
-          <input className='bg-transparent outline-none text-white placeholder:text-white p-6'
+          <input className=' bg-transparent outline-none text-white placeholder:text-white p-6'
              type='text'
              placeholder='Buscar'
           />

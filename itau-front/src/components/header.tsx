@@ -16,12 +16,12 @@ export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return(
-        <header className='relative flex items-center w-full h-20 bg-primary-orange'>
-            <div className='absolute top-0 right-0 bg-primary-blue w-[19%] h-full z-0'></div>
+        <header className='relative lg:items-center w-full h-20 bg-primary-orange'>
+            <div className='absolute top-0 right-0 bg-primary-blue md:w-[19%] h-full z-0'></div>
 
             <Container>
                 <div className='flex flex-1 items-center justify-between'>
-                    <div className='flex items-center gap-14'>
+                    <div className='flex  mr-80 mt-2 gap-6 lg:mr-0 lg:mt-0 lg:items-center lg:gap-14'>
                         <Image
                             src={Logo}
                             alt="Logo"
@@ -90,7 +90,7 @@ export function Header() {
                     <Search/>
                 </div>
 
-                <button className='flex items-center gap-4 bg-primary-blue h-20 pl-10 z-10'>
+                <button className='flex rounded-full  ml-60 -mt-12 p-5 h-14  md:rounded-none items-center gap-4 bg-primary-blue md:h-20 md:mt-0 md: lg:pl-10 z-10'>
                     <Image
                         src={IconUser}
                         alt='Icon User'

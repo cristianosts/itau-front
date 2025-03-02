@@ -11,7 +11,7 @@ export function SectionServices() {
     return (
         <section className="relative w-full h-[965px] pt-32"> 
             <Container>
-                <div className="flex-1 max-w-[594px]">
+                <div className="flex flex-col items-center mb-16 md:mb-0 md:flex-1 max-w-[594px]">
                     <span className="block text-primary-orange text-sm font-bold uppercase mb-9">Serviços Exclusivos</span>
 
                     <h2 className="text-primary-gray text-[56px] font-bold leading-tight mb-6">
@@ -83,7 +83,7 @@ export function SectionServices() {
                 </div>
             </Container>
 
-            <div className='absolute flex items-center top-0 right-0 w-[32%] h-full bg-gray-phone'>
+            <div className='absolute hidden xl:flex items-center top-0 right-0 w-[32%] h-full bg-gray-phone'>
                 <Image className='translate-x-[-50%]'
                      src={ImgPhone}
                      alt='Phone Image'
