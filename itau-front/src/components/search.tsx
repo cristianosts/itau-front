@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export function Search() {
     return (
-        <div className='hidden lg:flex lg:mr-[-300px] md:items-center  md:gap-4'>
+        <div className='hidden lg:flex lg:mr-[-210px] md:items-center  md:gap-4'>
           <Image className='hidden xl:block '
              src={IconSearch}
              alt='Search'

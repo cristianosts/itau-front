@@ -17,7 +17,7 @@ export function Header() {
 
     return(
         <header className='relative lg:items-center w-full h-20 bg-primary-orange'>
-            <div className='absolute top-0 right-0 bg-primary-blue md:w-[19%] h-full z-0'></div>
+            <div className='absolute top-0 right-0 bg-primary-blue md:w-[22%] h-full z-0'></div>
 
             <Container>
                 <div className='flex flex-1 items-center justify-between'>
@@ -90,7 +90,7 @@ export function Header() {
                     <Search/>
                 </div>
 
-                <button className='flex rounded-full ml-60 -mt-12 p-5  h-14  md:rounded-none items-center gap-4 bg-primary-blue md:pr-10 md:h-[83px] md:w-40 md:-mt-[60px] md:mr-[-400px] lg:mr-0  lg:mb-[-65px] z-10'>
+                <button className=' flex rounded-full ml-60 -mt-12 p-5  h-14  md:rounded-none items-center gap-4 bg-primary-blue md:pr-10 md:h-[83px] md:-mt-[60px] md:mr-[-400px] lg:mr-0  lg:mb-[-65px] z-10'>
                     <Image
                         src={IconUser}
                         alt='Icon User'
