@@ -21,7 +21,7 @@ export function Header() {
 
             <Container>
                 <div className='flex flex-1 items-center justify-between'>
-                    <div className='flex  mr-80 mt-2 gap-6 lg:mr-0 lg:mt-0 lg:items-center lg:gap-14'>
+                    <div className='flex mr-72 mt-2 gap-6 lg:mr-0 lg:mt-0 lg:items-center lg:gap-14'>
                         <Image
                             src={Logo}
                             alt="Logo"
@@ -90,7 +90,7 @@ export function Header() {
                     <Search/>
                 </div>
 
-                <button className=' flex rounded-full ml-60 -mt-12 p-5  h-14  md:rounded-none items-center gap-4 bg-primary-blue md:pr-10 md:h-[83px] md:-mt-[60px] md:mr-[-400px] lg:mr-0  lg:mb-[-65px] z-10'>
+                <button className=' flex rounded-full ml-56 -mt-12 p-5  h-14 pr-10 md:rounded-none items-center gap-4 bg-primary-blue md:pr-10 md:h-[83px] md:-mt-[60px] md:mr-[-400px] lg:mr-0  lg:mb-[-65px] z-10'>
                     <Image
                         src={IconUser}
                         alt='Icon User'
