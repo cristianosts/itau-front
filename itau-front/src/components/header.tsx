@@ -57,7 +57,7 @@ export function Header() {
 
                         <div className={`absolute md:hidden top-[90px] left-0 pb-5 w-full bg-primary-orange flex flex-col items-center gap-6 transform transition-transform ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
                         
-                        style={{ transition: '0.3s ease', opacity: isMenuOpen ? 1 : 0 }} 
+                        style={{ transition: '0.3s ease', opacity: isMenuOpen ? 1 : 0 }}  
                         
                         >
                             
