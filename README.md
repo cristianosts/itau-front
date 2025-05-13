@@ -1,2 +1,2 @@
 # itau-front
- itau front page using react | next | typescript
+ itau front page using react | next | typescript | tailwindcss
