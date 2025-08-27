@@ -1,4 +1,4 @@
-# itau-front
+## itau-front
 
 Replica da interface web do Itaú, desenvolvida com **Next.js (App Router)**, **React**, **TypeScript** e **TailwindCSS**, priorizando **performance**, **escalabilidade** e **arquitetura limpa**.
 
