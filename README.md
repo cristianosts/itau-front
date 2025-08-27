@@ -1,22 +1,22 @@
 # itau-front
 
-Replica da interface web do Itaú, desenvolvida com **React**, **Next.js**, **TypeScript** e **TailwindCSS**, visando **performance**, **escalabilidade** e **alta manutenibilidade**.
+Replica da interface web do Itaú, desenvolvida com **Next.js (App Router)**, **React**, **TypeScript** e **TailwindCSS**, priorizando **performance**, **escalabilidade** e **arquitetura limpa**.
 
 ---
 
 ## Tecnologias Utilizadas
-- **React.js** – Componentização e reatividade.
-- **Next.js** – Renderização híbrida (SSR/SSG), roteamento otimizado e SEO.
-- **TypeScript** – Tipagem estática para maior segurança e robustez.
-- **TailwindCSS** – Estilização utilitária e responsiva com alta produtividade.
+- **Next.js (App Router)** – Roteamento moderno.
+- **React 18** – Componentização, hooks e reatividade.
+- **TypeScript** – Tipagem estática para maior confiabilidade e manutenibilidade.
+- **TailwindCSS** – Estilização utilitária, responsiva e altamente produtiva.
+- **Vercel** – Deploy e CI/CD nativo para projetos Next.js.
 
 ---
 
 ## Descrição
 
-Este projeto tem como objetivo replicar a experiência digital do Itaú em uma **interface moderna, responsiva e performática**, aplicando padrões de arquitetura limpa, separação de responsabilidades e boas práticas de desenvolvimento front-end.  
-
-Além do foco em **UI/UX**, a aplicação segue princípios de **reuso de componentes**, **organização modular** e **padronização de código**.
+O projeto é uma reprodução da **experiência digital Itaú**, trazendo uma interface **moderna, responsiva e escalável**.  
+A arquitetura foi organizada para garantir **clareza**, **reuso de componentes** e **facilidade de manutenção**, alinhada a boas práticas do ecossistema **Next.js + TypeScript**.  
 
 ---
 
@@ -24,15 +24,18 @@ Além do foco em **UI/UX**, a aplicação segue princípios de **reuso de compon
 
 ```bash
 itau-front/
-├── public/           # Arquivos estáticos (imagens, ícones, fontes)
+├── public/               # Arquivos estáticos (imagens, ícones, fontes)
 ├── src/
-│   ├── assets/       # Recursos estáticos internos (imagens, svgs, etc.)
-│   ├── components/   # Componentes reutilizáveis da interface
-│   ├── hooks/        # Hooks customizados para lógica de negócio
-│   ├── pages/        # Páginas (Next.js - file-based routing)
-│   ├── services/     # Comunicação com APIs e integrações
-│   ├── utils/        # Funções utilitárias e helpers
-│   └── App.tsx       # Componente principal
-├── .env              # Variáveis de ambiente
-├── package.json      # Dependências e scripts do projeto
-└── README.md
+│   ├── app/              # Estrutura do App Router (Next.js 13+)
+│   ├── assets/           # Recursos estáticos internos (svgs, imagens, etc.)
+│   ├── components/       # Componentes reutilizáveis da UI
+│   │   ├── container.tsx
+│   │   ├── header.tsx
+│   │   ├── itemMenu.tsx
+│   │   ├── search.tsx
+│   │   ├── sectionHero.tsx
+│   │   └── sectionServices.tsx
+│   └── ...
+├── .gitignore
+├── .gitattributes
+├── LICENSE
